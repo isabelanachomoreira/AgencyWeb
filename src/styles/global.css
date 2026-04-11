@@ -1,0 +1,43 @@
+/* ----- RESET DO CSS ----*/
+
+*{
+border: 0; /*zeramos a borda do elemento*/
+margin: 0; /*distancia externa*/
+padding: 0; /*zeramos espaçamento interno*/
+box-sizing: border-box; /*respeitar largura e altura*/
+}
+
+/* ---- VARIÁVEIS CSS ----*/
+:root{
+
+    /*--- CORES ---*/
+    --color-blue:#1090CB; /* Variavel de cor*/
+    --color-blue-10: #1090CB1a;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray: #5C5C5C;
+    --color-gray-2: #969696;
+    --color-gray-3: #C4C4C4;
+
+    /*--- FONTES ---*/
+    /*--- SIZE ---*/
+    --font-size-h1: 35px; /* --- Variavel pra tamanho da fonte*/
+    --font-size-h2: 30px;
+    --font-size-h3: 25px;
+    --font-size-h4: 18px;
+    --font-size-body: 16px;
+    --font-size-button: 16px;
+    --font-size-caption: 14px;
+
+    /*----WEIGHT---*/
+    --font-weight-h1: 600; /* --- Variavel de expessura da fonte--*/
+    --font-weight-h2: 600;
+    --font-weight-h3: 600;
+    --font-weight-h4: 500;
+    --font-weight-body: 400;
+    --font-weight-button:700;
+    --font-weight-caption:400;
+
+    /*----FAMILY---*/
+    --font-family-primary: "Poppins", sans-serif; /*Variavel de familia de fonte*/
+}
