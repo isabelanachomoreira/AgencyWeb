@@ -2,7 +2,7 @@
 
 header{
     display: flex; /* Para o grupo ficar ao lado de outro*/
-    justify-content: space-between; /* Colocar nas extremidades*/
+    justify-content: space-between; /* Colocar os elementos nas extremidades*/
     align-items: center; /* Alinhamento dos elementos no eixo vertical*/ 
     padding: 30px; /* Espaçamento interno*/
     border-bottom: 0.7px solid var(--color-gray-3); /* borda inferior */
@@ -20,13 +20,11 @@ header{
     display: flex;
     gap: 40px;
     list-style: none; /* Remove a bolinha */
-
 }
 .navigation-header ul li a {
     text-decoration: none; /* Decoração do texto */
     color: var(--color-black); /* cor do texto ja definida no glabal */ 
     font-family: var(--font-family-primary); /*Importação da familia da fonte */
-
 }
 
 .navigation-header ul li .menu-active{
@@ -41,5 +39,79 @@ header{
     border-radius: 10px; /*arredondamento das bordas */
     padding: 10px 20px; /*espaçamento interno top right bottom left */
     font-weight: var(--font-weight-button); /* Espessura da fonte */
+}
+
+
+/* ---------------MAIN--------------------*/
+main{
+    display: flex; /*Usado pro grupo ficar um ao lado do outro*/
+    justify-content: center; /*Centraliza os objetos na horizontal*/
+    align-items: center; /*Centraliza os objetos na vertical*/
+    gap: 50px; /*Distancia entre os objetos/elementos do grupo*/
+    background-color: var(--color-blue-10); /*Cor do fundo*/
+    padding: 50px 0; /*Espaçamento interno*/
+}
+
+.main-content{
+    display: flex; /*Usado pro grupo ficar um ao lado do outro*/
+    flex-direction: column; /*Para os elementos ficarem em coluna*/
+    gap: 30px; /*Distancia entre os objetos/elementos do grupo*/
+    width: 520px;
+    height: 380px;
+}
+
+.main-content h1{
+    font-family: var(--font-size-h1); /*Tamanho da fonte*/
+    font-family: var(--font-family-primary); /*Altera a fonte*/
+    font-weight: var(--font-weight-h1); /*Espessura da fonte*/
+}
+
+.main-content h1 span{
+    color: var(--color-blue); /*Altera a cor da fonte*/
+}
+
+.main-content p{
+    font-family: var(--font-family-primary); /*Altera a fonte*/
+    color: var(--color-gray); /*Altera a cor da fonte*/
+    line-height: 30px; /*Espaço entre linhas, espaçamento*/
+}
+
+.container-cta{
+    display: flex; /*Usado pro grupo ficar um ao lado do outro*/
+    gap: 10px; /*Distancia entre os objetos/elementos do grupo*/
+}
+
+.btn-primary, .btn-secondary {
+    padding:8px 55px; /*Espaçamento interno*/
+    border-radius: 10px; /*arredondamento das bordas */
+    font-weight: var(--font-weight-button); /*Espessura da fonte*/
+    text-decoration: none; /*Tira a decoração do texto */
+    font-family: var(--font-weight-primary); /*Tamanho da fonte*/
+}
+
+.btn-primary{
+    background-color: var(--color-blue); /*Cor do fundo*/
+    color: var(--color-white); /*Cor do da fonte*/
+    font-family: var(--font-family-primary); /*Familia da fonte*/
+    transition: 0.3s; /*Tempo de transição do elemento*/
+    
+    
+}
+
+.btn-primary:hover{
+    background-color: rgb(46, 46, 133);
 
 }
+
+.btn-secondary{
+    background-color: var(--color-white); /*Cor do fundo*/
+    color: var(--color-blue); /*Cor do da fonte*/
+    border: 1px solid var(--color-blue); /*tamanho forma da borda e cor da borda*/
+    font-family: var(--font-family-primary); /*Familia da fonte*/
+    transition: 0.3s; /*Tempo de transição do elemento*/
+}
+
+.btn-secondary:hover{
+    background-color: rgb(244, 244, 244);
+}
+
