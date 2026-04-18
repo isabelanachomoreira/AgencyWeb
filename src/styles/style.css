@@ -1,2 +1,45 @@
 @import url("./global.css");
 
+header{
+    display: flex; /* Para o grupo ficar ao lado de outro*/
+    justify-content: space-between; /* Colocar nas extremidades*/
+    align-items: center; /* Alinhamento dos elementos no eixo vertical*/ 
+    padding: 30px; /* Espaçamento interno*/
+    border-bottom: 0.7px solid var(--color-gray-3); /* borda inferior */
+
+}
+
+.container-nav-header{ /* coloca-se o . pq estamos estilizando um classe  */
+    display: flex;  /* para que o grupo fiquei um ao lado do outro*/
+    align-items: center; /* para alinhar os itens */
+    gap: 70px; /* Distancia entre os elementos, entre os grupos */
+
+}
+
+.navigation-header ul { /* Se usa o navigation-header e algo que vc quer estilizar dentro de uma tag de grupo especifico ex: UL */
+    display: flex;
+    gap: 40px;
+    list-style: none; /* Remove a bolinha */
+
+}
+.navigation-header ul li a {
+    text-decoration: none; /* Decoração do texto */
+    color: var(--color-black); /* cor do texto ja definida no glabal */ 
+    font-family: var(--font-family-primary); /*Importação da familia da fonte */
+
+}
+
+.navigation-header ul li .menu-active{
+    color: var(--color-blue);
+}
+
+.btn-header{
+    font-family: var(--font-family-primary); /*Altera a fonte */
+    text-decoration: none; /*Tira a decoração do texto */
+    background-color: var(--color-blue); /*cor de fundo do botão */ 
+    color: var(--color-white); /* cor do texto*/
+    border-radius: 10px; /*arredondamento das bordas */
+    padding: 10px 20px; /*espaçamento interno top right bottom left */
+    font-weight: var(--font-weight-button); /* Espessura da fonte */
+
+}
