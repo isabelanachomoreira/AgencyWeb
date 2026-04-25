@@ -176,6 +176,8 @@ main{
     margin: 0 auto;
 }
 
+/*-------SERVICE---------- */
+
 .service-description{
     display: flex; /* Distancia entre elementos */
     gap: 60px;
@@ -223,5 +225,38 @@ main{
     font-family: var(--font-family-primary);
     line-height: 27px;
     width: 420px;
+}
+
+/*----------SECTION BENEFIT------------- */
+.section-benefit{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-benefit{
+    display: flex;
+    flex-direction: column;
+    gap: 35;
+    align-items: center;
+    padding: 60px 48px;
+    border-radius: 20px;
+}
+
+.card-benefit p{
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-body);
+    color: var(--color-gray);
+    width: 458px;
+}
+
+.card-benefit-secondary{
+    background-color: #F4F4F4;
+}
+
+.card-benefit h2{
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
 }
 
